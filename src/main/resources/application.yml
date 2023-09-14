@@ -14,15 +14,15 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/api/v3/**
-      httpserver:
-        wiretap: true
-      httpclient:
-        wiretap: true
-
-logging:
-  level:
-    root: error
-    reactor.netty: trace
-    org.springframework.cloud.gateway: trace
-    org.springframework.http.server.reactive: trace
+#      httpserver:
+#        wiretap: true
+#      httpclient:
+#        wiretap: true
+#
+#logging:
+#  level:
+#    root: error
+#    reactor.netty: trace
+#    org.springframework.cloud.gateway: trace
+#    org.springframework.http.server.reactive: trace
 
