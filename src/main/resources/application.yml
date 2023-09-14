@@ -14,6 +14,7 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/api/v3/**
+# ENABLE BELOW FOR TROUBLESHOOTING
 #      httpserver:
 #        wiretap: true
 #      httpclient:
