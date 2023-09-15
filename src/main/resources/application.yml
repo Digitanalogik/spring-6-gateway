@@ -1,17 +1,22 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:7000
   cloud:
     gateway:
       routes:
         - id: spring-6-rest-mvc
-          uri: http://localhost:8081
+          uri: http://localhost:7001
           predicates:
             - Path=/api/v1/**
         - id: spring-6-r2dbc
-          uri: http://localhost:8082
+          uri: http://localhost:7002
           predicates:
             - Path=/api/v2/**
         - id: spring-6-reactive-mongo
-          uri: http://localhost:8083
+          uri: http://localhost:7003
           predicates:
             - Path=/api/v3/**
 # ENABLE BELOW FOR TROUBLESHOOTING
