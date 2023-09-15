@@ -1,4 +1,4 @@
-package fi.tatu.spring6gateway.config;
+package fi.soininen.tatu.spring6gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
